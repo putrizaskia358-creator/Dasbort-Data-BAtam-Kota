@@ -89,7 +89,7 @@ if "PAD" in df.columns:
 if "bm_pendidikan" in df.columns:
     c4.metric("Belanja pendidikan terbaru", fmt_num(terbaru["bm_pendidikan"]))
 
-st.info("Angka ditampilkan mengikuti satuan pada dataset sumber. Dashboard tidak mengubah angka menjadi rupiah karena keterangan satuan tidak dicantumkan pada file CSV.")
+#st.info("Angka pada dashboard mengikuti satuan yang tercantum dalam dataset sumber. Karena file CSV tidak mencantumkan keterangan satuan secara eksplisit, angka tidak dikonversi atau diberi label Rupiah (Rp).")
 
 # Tren IPM dan indikator sosial
 st.subheader("1. Perkembangan IPM Kota Batam")
